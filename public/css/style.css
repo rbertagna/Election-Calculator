@@ -1,0 +1,152 @@
+
+
+body {
+  background-color: white;
+  margin-top: 0px;
+}
+
+.wrapper {
+  width: 100%;
+  background-color: rgb(140,200,255);
+  height: 100%;
+  min-height: 600px;
+  margin-top: 0px;
+  border-radius: 30px;
+}
+
+
+.title > h1 {
+  margin: 0px;
+  font-size: 60px;
+  text-align: center;
+  color: white;
+}
+.title {
+
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+
+div.rank_button {
+  background-color: #f2f2f2;
+  height: 70px;
+  width: 300px;
+  margin: 350px auto 0;
+  text-align: center;
+  color: grey;
+  border-radius: 20px;
+}
+
+div.rank_button:hover {
+  background-color: #d9d9d9;
+}
+
+div.rank_button > h3 {
+  font-size: 40px;
+  padding-top: 9px;
+}
+
+.choice {
+  width: 40%;
+  margin: 15px 5%;
+  float: left;
+}
+
+.music_img {
+  height: 250px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 5px;
+  border: 2px solid #f2f2f2;
+}
+
+.left .music_img {
+  background-size: cover;
+
+}
+
+.right .music_img {
+  background-size: cover;
+}
+h2{
+  padding: 15px;
+}
+.music_hover {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: -20px;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  color: rgba(0,0,0,0);
+  background-color: rgba(0,0,0,0);
+}
+
+.music_hover:hover {
+  display: block;
+  background: rgba(50, 50, 50, 10);
+  opacity: .8;
+  color: white;
+}
+
+input[type="submit"] {
+  height:100%;
+  width:100%;
+  color: rgba(0,0,0,0);
+  background-color: rgba(0,0,0,0);
+  border: 0px;
+  position:relative;
+  top: -73px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/*Rankings page*/
+
+table {
+  width: 80%;
+  margin: 0px 10% 20px;
+  border-radius: 20px;
+}
+
+tr {
+  border: 2px solid #595959;
+  padding: 4px;
+  background-color: #e6e6e6;
+}
+
+tr.grey {
+  background-color: #cccccc;
+}
+
+.rank {
+  padding-left: 5px;
+}
+
+.back {
+  height: 50px;
+  width: 200px;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+  right: 0;
+  left: 25px;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+.back:hover {
+  background-color: #e6e6e6;
+}
+
+.back h2 {
+  font-size: 40px;
+  margin: 0 auto;
+  padding: 3px;
+}
+

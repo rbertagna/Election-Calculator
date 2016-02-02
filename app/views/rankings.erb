@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> Ranker</title>
+    <link rel="stylesheet" href="css/style.css" type="../../public/css">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/indexStyle.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title">
+        <h1> Candidate Ranker </h1>
+      </div>
+      <a href = "/">
+        <div class="back">
+          <h2> Back </h2>
+        </div>
+      </a>
+      <table>
+        <tr>
+          <td class="rank"> Rank </td>
+          <td class="name"> Name </td>
+          <td class="rating"> Rating </td>
+        </tr>
+        <% @rankings.each do |candidate|%>
+          <%if @grey == false %>
+            <tr>
+             
+              <td class="rank"> <%= candidate[2] %> </td>
+              <td class="name"> <%= candidate[0] %> </td>
+              <td class="rating"> <%= candidate[1] %></td>
+            </tr>
+            <% @grey = true %>
+          <% else %>
+            <tr class = "grey">
+              
+              <td class="rank"> <%= candidate[2] %> </td>
+              <td class="name"> <%= candidate[0] %> </td>
+              <td class="rating"> <%= candidate[1] %></td>
+            </tr>
+            <% @grey = false %>
+          <% end %>
+        <% end %>
+      </table>
+    </div>
+  </body>
+</html> 

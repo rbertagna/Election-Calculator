@@ -1,0 +1,210 @@
+body {
+  margin: 0px;
+  padding :0px;
+  border: 0px;
+  width:100%;
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0;
+  min-width: 1300px;
+}
+
+.italic {
+  font-weight: bold;
+}
+
+#splash-page {
+  height: 100vh;
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+  border-bottom: solid #161940 2px;
+  margin: 0;
+}
+
+.title-bar-noScroll {
+  margin-left: 4%;
+  width: 30%;
+  border-bottom: solid white 3px;
+  position: fixed;
+  transition: all .6s;
+  min-width: 363px;
+}
+
+.title-bar-scroll {
+  margin: 0;
+  padding-left: 4%;
+  width: 100%;
+  background-color: #2D3053;
+  border-bottom: solid #FEFEFE 3px;
+  position: fixed;
+  transition: all .5s;
+}
+
+.title-bar-noScroll h1 {
+  padding: 0;
+  color: white;
+  margin-top: 3vh;
+  font-size: 4em;
+  transition: all .6s;
+}
+
+.title-bar-scroll h1 {
+  padding: 0;
+  color: #FEFEFE;
+  margin-top: 1vh;
+  font-size: 3.7em;
+  transition: all .5s;
+}
+
+.create-button {
+  border: 0;
+  position: fixed;
+  right: 0;
+  height: 8vh;
+  margin-top: 3vh;
+  margin-right: 3%;
+  font-size: 2em;
+  font-style: bold;
+  transition: all .5s;
+  min-height: 55px;
+}
+
+.create-button-scroll {
+  border: 0;
+  position: fixed;
+  right: 0;
+  height: 7vh;
+  margin-top: 1vh;
+  margin-right: 2%;
+  font-size: 1.5em;
+  font-style: bold;
+  transition: all .5s;
+  min-height: 55px;
+}
+
+#index-create-button {
+  background-color: white;
+  color: #161940;
+}
+
+#index-create-button:hover {
+  background-color: #BABABA;
+}
+
+#splash-content{
+  margin-top: 14vh;
+  margin-left: 40%;
+  width: 45%;
+}
+
+#splash-content h2 {
+  font-size: 5.5em;
+  color: white;
+}
+
+#splash-content h3 {
+  text-align: center;
+  color: white;
+  font-style: italic;
+  font-size: 2.5em;
+}
+
+#what-is {
+  padding-top: 5vh;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #FEFEFE;
+}
+
+#what-is h1 {
+  padding: 0;
+  text-align: center;
+  font-size: 5em;
+  color: #161940;
+}
+
+#what-is p {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 6vh;
+  margin-bottom: 6vh;
+  text-align: center;
+  font-style: italic;
+  font-size: 3.5em;
+  color: #161940;
+  padding-bottom: 4vh;
+}
+
+#process {
+  width: 95%;
+  margin: 0 auto;
+  padding-bottom: 1%;
+  margin-bottom: 8%;
+  border-radius: 7px;
+  background-color: #2D3053;
+}
+
+#process #process-t-chart {
+  margin: 0 auto;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 10%;
+}
+
+#process #process-t-chart .you-give {
+  float: left;
+  width: 50%;
+}
+
+#process #process-t-chart .we-give {
+  float: left;
+  width: 50%;
+}
+
+#process #process-t-chart .you-give .bottom {
+  padding-top: 8%;
+  border-top: solid white 2px;
+}
+
+#process #process-t-chart .we-give .bottom {
+  border-top: solid white 2px;
+  border-left: solid white 2px;
+}
+
+#process #process-t-chart h1 {
+  color: white;
+  text-align: center;
+}
+
+#process #process-t-chart ul {
+  color: white;
+  text-align: center;
+}
+
+#process #process-t-chart .bottom {
+  padding-bottom: 5%;
+}
+
+#process #process-t-chart .top h1{
+  font-size: 3.5em;
+}
+
+#process #process-t-chart .bottom h1{
+  font-size: 6em;
+  margin: 0 auto;
+  padding-top: 7vh;
+  width: 85%;
+}
+
+#process #process-t-chart .bottom h2{
+  font-style: italic;
+}
+
+#process #process-t-chart .bottom ul{
+  margin: 0;
+}

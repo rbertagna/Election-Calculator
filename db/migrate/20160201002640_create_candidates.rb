@@ -10,6 +10,6 @@ class CreateCandidates < ActiveRecord::Migration
   end
 
   def down
-    drop_table :musicians
+    drop_table :candidates
   end
 end

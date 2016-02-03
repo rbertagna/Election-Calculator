@@ -13,7 +13,9 @@ class ApplicationController < Sinatra::Base
   ##item-section-380547 > li:nth-child(1) > div > div.yt-lockup-content > h3 > a
 
   get "/" do
-    
+
+    View.create( :views => 0)
+
     array = Candidate.all
     @left = array.sample
     # until @left.party == "Democrat"

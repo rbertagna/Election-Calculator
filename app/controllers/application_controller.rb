@@ -14,8 +14,6 @@ class ApplicationController < Sinatra::Base
 
   get "/" do
 
-    View.create( :views => 0)
-
     array = Candidate.all
     @left = array.sample
     # until @left.party == "Democrat"

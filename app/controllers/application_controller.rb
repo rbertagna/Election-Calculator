@@ -31,13 +31,13 @@ class ApplicationController < Sinatra::Base
 
     array = Candidate.all
     @left = array.sample
-    until @left.party == "Democrat"
-        @left = array.sample
-    end
+    # until @left.party == "Democrat"
+    #     @left = array.sample
+    # end
     @right = array.sample
-    until @right.party == "Republican"
-        @right = array.sample
-    end
+    # until @right.party == "Republican"
+    #     @right = array.sample
+    # end
     #puts @right.rating + @left.rating
     while @left == @right
       @right = array.sample
@@ -52,7 +52,7 @@ class ApplicationController < Sinatra::Base
     @right_rating = params[:right_rating].to_f
     @expected_outcome_left = 1/(1+10**((@right_rating - @left_rating)/400))
 
-    @left_rating = @left_rating + 8 * (1 - @expected_outcome_left)
+    @left_rating = @left_rating + 16 * (1 - @expected_outcome_left)
     @right_rating = @right_rating + 16 * (0 - (1 - @expected_outcome_left))
 
 
@@ -68,7 +68,7 @@ class ApplicationController < Sinatra::Base
     @right_rating = params[:right_rating].to_f
     @expected_outcome_left = 1/(1+10**((@right_rating - @left_rating)/400))
 
-    @left_rating = @left_rating + 8 * (0 - @expected_outcome_left)
+    @left_rating = @left_rating + 16 * (0 - @expected_outcome_left)
     @right_rating = @right_rating + 16 * (1 - (1 - @expected_outcome_left))
 
     @left_id = params[:left_id].to_i
